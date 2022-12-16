@@ -2,69 +2,85 @@
 <html>
 
 <head>
+  <title>Movie - Twin Peaks</title>
   <meta charset=”utf-8”>
-  <title>Movie - Fire Walk With Me (1992)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./styles/formatting.css" rel="stylesheet">
+  <link href="./styles/colors.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1>Twin Peaks</h1>
-    <nav>
-      <ul style="list-style-type:none">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/pages/tv-show.html">Tv Show <em>(Twin Peaks)</em></a></li>
-        <li><a href="/pages/movie.html">Movie <em>(Fire Walk With Me)</em></a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div>
-      <h2>About <em>Fire Walk With Me</em></h2>
-      <p><em>Fire Walk With Me</em> is David Lynch's 1992 <em>prequel</em> movie to his cult following TV show, <em>Twin Peaks</em>. 
-        <em>Fire Walk With Me</em> shows the audience who and what Laura Palmer encounters during the last week of her life. 
-        Witness chilling encounters previously unknown to the viewer and see for yourself WHAT Laura saw, WHO was there, and WHERE 
-        <em>is</em> it the unfortunate few find themselves? Find out in <em>Fire Walk With Me.</em></p>
+  <div id="grid-container">
+    <header>
+      <h1> Twin Peaks</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./tv-show.html">Tv Show <em>(Twin Peaks)</em></a></li>
+          <li><a href="./movie.html">Movie <em>(Fire Walk With Me)</em></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-left">
+      <div class="block">
+        <h2>About <em>Fire Walk With Me</em></h2>
+        <p><em>Fire Walk With Me</em> is David Lynch's 1992 <em>prequel</em> movie to his cult following TV show,
+          <em>Twin Peaks</em>.
+          <em>Fire Walk With Me</em> shows the audience who and what Laura Palmer encounters during the last week of her
+          life.
+        </p>
+        <p>Witness chilling encounters previously unknown to the viewer and see for yourself WHAT Laura saw, WHO was
+          there, and WHERE
+          <em>is</em> it the unfortunate few find themselves? Find out in <em>Fire Walk With Me.</em>
+        </p>
+      </div>
     </div>
-    <div>
-      <iframe width="640" height="360" src="https://www.youtube.com/embed/I9Ey1FQVIO8" 
-      title="Twin Peaks: Fire Walk with Me (1992) Trailer" frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>
+    <div class="main-right">
+      <div class="block">
+
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/I9Ey1FQVIO8"
+          title="Twin Peaks: Fire Walk with Me (1992) Trailer" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+        <form action="/api/user" method="post">
+          <fieldset>
+            <legend>Join our mailing list</legend>
+            <div>
+              <label for="full_name">Enter your name:</label>
+              <br>
+              <input type="text" name="full_name">
+            </div>
+            <div>
+              <label for="email">Enter your email:</label>
+              <br>
+              <input type="email" name="email">
+            </div>
+            <br>
+            <input type="submit" value="Submit!">
+          </fieldset>
+        </form>
+      </div>
     </div>
-    <form action="/api/user" method="post">
-      <fieldset>
-        <legend>Join our mailing list</legend>
-        <div>
-          <label for="full_name">Enter your name:</label>
-          <br>
-          <input type="text" name="full_name">
-        </div>
-        <div>
-         <label for="email">Enter your email:</label>
-         <br>
-         <input type="email" name="email">
-        </div>
-         <br>
-         <input type="submit" value="Submit!">
-      </fieldset>
-    </form>
-  </main>
-  <footer>
-    <nav>
-      <ul style="list-style-type:none">
-        <li>
-          <a href="/index.html">Home</a>
-        </li>
-        <li>
-          <a href="/pages/tv-show.html">Tv Show</a>
-        </li>
-        <li>
-          <a href="/pages/movie.html">Movie<em>(Fire Walk With Me)</em></a>
-        </li>
-      </ul>
-    </nav>
-    <p>All content copyright &copy; 2022, Lizzie Reynolds</p>
-  </footer>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./tv-show.html">Tv Show <em>(Twin Peaks)</em></a>
+          </li>
+          <li>
+            <a href="./movie.html">Movie<em>(Fire Walk With Me)</em></a>
+          </li>
+        </ul>
+      </nav>
+      <p>All content copyright &copy; 2022, Lizzie Reynolds</p>
+    </footer>
+  </div>
 </body>
 
 </html>
