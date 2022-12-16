@@ -1,0 +1,28 @@
+body{
+  background: #E8E8E8;
+  
+}
+#grid-container{
+  background: #fff;
+}
+header, footer{
+  background: #333333;
+}
+header nav, footer nav{
+ background: #B90504;
+}
+header > h1{
+  color:#fff;
+}
+header h1 ~ nav a{
+  color:#f6f6f6c9;
+}
+header nav a:hover, footer nav a:hover{
+  color: #fff;
+}
+footer a{
+  color:#f6f6f6c9;
+}
+footer p{
+  color:#fff;
+}

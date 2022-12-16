@@ -1,0 +1,146 @@
+*{
+  margin:0;
+}
+.block{
+  display:block;
+}
+ul{
+  list-style-type:none;
+}
+#grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 134px 1fr 100px;
+  width: 80vw;
+  margin: 0 auto;
+  grid-template-areas:
+  "top top top top top top"
+  "middle-left middle-left middle-right middle-right middle-right middle-right"
+  "bottom bottom bottom bottom bottom bottom";
+}
+header{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  grid-column: 1 / span 6;
+  grid-row: 1 / span 1;
+  font-size: 1em;
+  grid-area: top;
+}
+header h1{
+  width: 100%;
+  padding: 50px 0 10px 10px;
+}
+header h1 + nav{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+header nav ul{
+  list-style-type: none;
+  display: inline; 
+}
+header nav ul li{
+  display: inline-block; 
+}
+header nav a{
+  text-decoration: none;
+  margin: 0 20px;
+}
+header nav a:hover, footer nav a:hover{
+  text-decoration: underline;
+}
+div.main-left{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1em;
+  grid-area: middle-left;
+  padding: 10px;
+}
+div.main-left h2{
+  margin: 20px 0 0 10px;
+  display: block;
+  width: 100%;
+ 
+}
+div.main-left h2 ~ p{
+  margin: 10px 0 20px 10px;
+  display: block;
+  width: 100%;
+  text-indent: 2em;
+}
+div.main-right{
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1em;
+  grid-area: middle-right;
+  padding: 30px;
+  margin: 0 0 0 30px;
+}
+div.main-right h3{
+  margin: 0 0 10px 0;
+}
+div.main-right h3 + picture{
+  margin: 0 0 50px 0;
+  display: block;
+}
+div.main-right div.flex  ul{
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin:0 auto;
+  padding: 0;
+  gap: 1em;
+}
+div.main-right div.flex  li{
+  flex: 0 4 auto;
+}
+div.main-right div.flex  li:nth-child(1){
+  flex: 4 .5 auto;
+}
+div.main-right div.flex  li:nth-child(3){
+  flex: 4 1 auto;
+}
+div.main-right div.flex  li img{
+  min-width: 100%;
+}
+div.main-right div.block > iframe{
+  max-width: 100%;
+}
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  grid-column: 1 / span 6;
+  grid-row: 3 / span 1;
+  font-size: 1em;
+  grid-area: bottom;
+}
+footer nav{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+footer nav ul{
+  list-style-type: none;
+  display: inline; 
+}
+footer nav ul li{
+  display: inline-block; 
+}
+footer nav a{
+  text-decoration: none;
+  margin: 0 20px;
+}
+footer p{
+  font-size: .75em;
+}
